@@ -1,5 +1,7 @@
 **Projeto NEKI PDFs Conversa com IA** 📚🤖🦜
 
+*Caso queira ver apenas o [resultado final](#resultado-final)*
+
 **Objetivo do Projeto:**
 O projeto NEKI PDFs Conversa com IA permite interagir com conteúdos de arquivos PDF utilizando uma interface web criada com Streamlit e tecnologias de IA para extrair e responder perguntas sobre o texto. Tudo isso operado dentro de contêineres Docker para uma instalação e execução simplificadas. 😎
 
@@ -57,3 +59,22 @@ Com estas etapas, você estará pronto para explorar o mundo fascinante dos PDFs
 - **C:** Caso tenha dúvidas sobre o PGVector e como fazer queries dos embeddings dentro do PGAdmin, sugiro olhar a documentação do [PGVector](https://github.com/pgvector/pgvector) e do [LangChain](https://python.langchain.com/docs/integrations/vectorstores/pgvector/)
 
 👍 O Streamlit pode apresentar alguns bugs caso você tente, foi utilizado devido ao fácil desenvolvimento para a prova de conceito. 👍
+
+---
+
+# Resultado Final
+
+### Testando Query após carregar os PDFs
+![Query](./img/Query1.png)
+
+### Mostrando através do pgAdmin os dados persistindo após gerar os embeddings
+
+![Collections](./img/Collection_pgAdmin.png)
+\
+\
+\
+![Embeddings](./img/Embeddings_pgAdmin.png)
+
+### Um dos motivos que me levaram a testar o PGVector ao invés do Pinecone por exemplo
+
+![PineconeVSPGVector](./img/PGVectorVSPinecone.png)
