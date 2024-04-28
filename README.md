@@ -1,6 +1,7 @@
 **Projeto NEKI PDFs Conversa com IA** 📚🤖🦜
 
 *Caso queira ver apenas o [resultado final](#resultado-final)*
+\
 *E para os que gostam de fazer o passo a passo tem o Jupyter Notebook para ir brincando com as possibilidades.*
 \
 **Não esqueça de ajustar o .env para que funcione perfeitamente**
