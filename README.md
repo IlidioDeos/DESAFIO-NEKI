@@ -1,6 +1,9 @@
 **Projeto NEKI PDFs Conversa com IA** 📚🤖🦜
 
 *Caso queira ver apenas o [resultado final](#resultado-final)*
+*E para os que gostam de fazer o passo a passo tem o Jupyter Notebook para ir brincando com as possibilidades.*
+\
+**Não esqueça de ajustar o .env para que funcione perfeitamente**
 
 **Objetivo do Projeto:**
 O projeto NEKI PDFs Conversa com IA permite interagir com conteúdos de arquivos PDF utilizando uma interface web criada com Streamlit e tecnologias de IA para extrair e responder perguntas sobre o texto. Tudo isso operado dentro de contêineres Docker para uma instalação e execução simplificadas. 😎
@@ -8,16 +11,16 @@ O projeto NEKI PDFs Conversa com IA permite interagir com conteúdos de arquivos
 **Pré-requisitos:**
 Antes de embarcar nessa jornada, você precisará instalar:
 1. **Docker**: [Instale Docker aqui](https://docs.docker.com/get-docker/)
-2. **Docker Compose**: [Instale Docker Compose aqui](https://docs.docker.com/compose/install/) (caso não esteja incluído no Docker).
+2. **Docker Compose**: [Instale Docker Compose aqui](https://docs.docker.com/compose/install/) 
 
-*Acredito que o Compose já venha instalado com o docker, mas não custa nada colocar aqui.*
+*Acredito que o Compose já venha instalado com o docker, mas não custa nada colocar aqui.**
 
 **Configuração Inicial:**
 1. **Clonagem do Repositório**:
    - Clone o repositório para obter os arquivos necessários.
    ```bash
-   git clone [URL_DO_REPOSITÓRIO]
-   cd [NOME_DO_DIRETÓRIO]
+   git clone https://github.com/IlidioDeos/DESAFIO-NEKI.git
+   cd DESAFIO-NEKI
    ```
 
 2. **Verifique os Arquivos de Configuração**:
@@ -31,6 +34,7 @@ Antes de embarcar nessa jornada, você precisará instalar:
    - Este comando constrói as imagens Docker e inicia os serviços.
 
 2. **Acesse a Interface do Streamlit**:
+   - **Não esqueça de ajustar o .env**
    - Visite `http://localhost:8501` para interagir com a aplicação.
 
 3. **Utilização**:
