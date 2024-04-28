@@ -13,6 +13,11 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 load_dotenv()
 CONNECTION_STRING = "postgresql+psycopg2://postgres:neki@db:5432/jackchain"
 
+# Por default nesses novos pacotes a OpenAI já utiliza o gpt-3.5-turbo e o text-embedding-ada-002 para embeddings de texto e chat respectivamente de forma padrão.	
+# Porém caso queira utilizar outros modelos, basta passar o nome do modelo como argumento para a classe OpenAIEmbeddings e ChatOpenAI.
+# Exemplo: embeddings = OpenAIEmbeddings(model_name="text-embedding-ada-002")
+# Exemplo: llm = ChatOpenAI(model_name="gpt-3.5-turbo")
+
 
 
 def ler_arquivos_pdf(pdf_docs):
