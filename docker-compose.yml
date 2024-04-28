@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: ./app
+    ports:
+      - "8501:8501"
+    environment:
+      - POSTGRES_CONNECTION_STRING=postgresql+psycopg2://postgres:neki@localhost:5432/jackchain
+    env_file:
+      - ./.env
+    depends_on:
+      - db
+
+  db:
+    build:
+      context: ./db
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=neki
+      - POSTGRES_DB=jackchain
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+volumes:
+  pgdata:
+
+networks:
+  default:
+    driver: bridge

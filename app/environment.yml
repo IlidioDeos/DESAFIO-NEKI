@@ -1,0 +1,15 @@
+name: myenv
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip:
+    - streamlit
+    - PyPDF2
+    - python-dotenv
+    - langchain
+    - langchain_openai
+    - langchain_community
+    - psycopg2-binary
+    - pgvector

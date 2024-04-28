@@ -9,8 +9,9 @@ from htmlTemplates import css, bot_template, user_template
 from langchain_community.vectorstores.pgvector import PGVector
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 
-# load_dotenv()
-# CONNECTION_STRING = os.getenv("POSTGRES_CONNECTION_STRING")
+load_dotenv()
+CONNECTION_STRING = "postgresql+psycopg2://postgres:neki@db:5432/jackchain"
+
 
 
 def ler_arquivos_pdf(pdf_docs):
@@ -111,8 +112,8 @@ def main():
                 st.success("Cadeia de conversa inicializada e dados salvos com sucesso!", icon="✅")
 
 if __name__ == '__main__':
-    load_dotenv()
-    CONNECTION_STRING = os.getenv("POSTGRES_CONNECTION_STRING")
+    # load_dotenv()
+    # CONNECTION_STRING = os.getenv("POSTGRES_CONNECTION_STRING")
     main()
 
 
